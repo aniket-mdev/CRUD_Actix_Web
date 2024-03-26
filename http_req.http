@@ -1,0 +1,33 @@
+# Book Request
+
+GET http://127.0.0.1:8000/author/author/65e85db7625742abec542ca1
+Authorization:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjp7ImlkIjoiNjVkYzliOTdjNzBiNWRjOTVjY2EwNWZlIiwibmFtZSI6IlRlc3QgMSIsImxvY2F0aW9uIjoiQ2hlbm5haSIsInRpdGxlIjoiREVWRUxPUEVSIHcifSwiaWF0IjoxNzEwOTUzOTY0LCJleHAiOjE3MTA5NTc1NjR9.0RZocXMsJGnPJmVOYvTabppnCHNDOcIW-d8JGiGH9Y0 
+
+### Authors
+
+GET http://127.0.0.1:8000/author/authors
+Authorization:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjp7ImlkIjoiNjVkYzliOTdjNzBiNWRjOTVjY2EwNWZlIiwibmFtZSI6IlRlc3QgMSIsImxvY2F0aW9uIjoiQ2hlbm5haSIsInRpdGxlIjoiREVWRUxPUEVSIHcifSwiaWF0IjoxNzEwOTUzOTY0LCJleHAiOjE3MTA5NTc1NjR9.0RZocXMsJGnPJmVOYvTabppnCHNDOcIW-d8JGiGH9Y0 
+
+### fetch again
+GET http://127.0.0.1:8000/author/authors
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjp7ImlkIjoiNjVkYzliOTdjNzBiNWRjOTVjY2EwNWZlIiwibmFtZSI6IlRlc3QgMSIsImxvY2F0aW9uIjoiQ2hlbm5haSIsInRpdGxlIjoiREVWRUxPUEVSIHcifSwiaWF0IjoxNzEwODMxMzg3LCJleHAiOjE3MTA4MzQ5ODd9.yYDBOgx2buLjtGbhOAacsBrkl6mzSHOAUm3SVyJiepw
+
+### usersauthentication middleware
+GET http://127.0.0.1:8000/user/users
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjp7ImlkIjoiNjVkYzliOTdjNzBiNWRjOTVjY2EwNWZlIiwibmFtZSI6IlRlc3QgMSIsImxvY2F0aW9uIjoiQ2hlbm5haSIsInRpdGxlIjoiREVWRUxPUEVSIHcifSwiaWF0IjoxNzEwOTMwNjc4LCJleHAiOjE3MTA5MzQyNzh9.P0_DA1if_oJF2Vy8USvHgF8zAVddSY0_PZssZ9ccokc
+
+### login the user 
+POST http://127.0.0.1:8000/user/login HTTP/1.1
+content-type: application/json
+
+{
+    "name":"Test 1"
+}
+
+### get file
+GET http://127.0.0.1:8000/get_file
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjp7ImlkIjoiNjVkYzliOTdjNzBiNWRjOTVjY2EwNWZlIiwibmFtZSI6IlRlc3QgMSIsImxvY2F0aW9uIjoiQ2hlbm5haSIsInRpdGxlIjoiREVWRUxPUEVSIHcifSwiaWF0IjoxNzExMDA1ODEyLCJleHAiOjE3MTEwMDk0MTJ9.enfv_tJ1Wd5DKD0yLEWy-r2q_L0o9_UNJ674BIdA04A
+
+### get author profilec
+GET http://127.0.0.1:8000/author/auther_profile/65e85db7625742abec542ca1 HTTP/1.1
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjp7ImlkIjoiNjVkYzliOTdjNzBiNWRjOTVjY2EwNWZlIiwibmFtZSI6IlRlc3QgMSIsImxvY2F0aW9uIjoiQ2hlbm5haSIsInRpdGxlIjoiREVWRUxPUEVSIHcifSwiaWF0IjoxNzExMTI3Mzc4LCJleHAiOjE3MTExMzA5Nzh9.rKfwC2iSX-YcMhS7lP7b1qCeWOYegm3pSC2ENF0TecQ

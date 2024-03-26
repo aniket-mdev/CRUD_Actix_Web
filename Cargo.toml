@@ -1,0 +1,31 @@
+[package]
+name = "http_server"
+version = "0.1.0"
+edition = "2021"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1"
+futures = "0.3"
+dotenv = "0.15.0"
+actix-web = "4.0"
+actix-service = "2.0.0"
+actix-multipart = "0.4"
+actix-web-static-files = "4.0"
+static-files = "0.2.1"
+derive_more = "0.99.11"
+chrono = { version = "0.4.23", features = ["serde"] }
+env_logger = "0.11.2"
+uuid = { version = "1.2.2", features = ["v4"] }
+bson = "1.2.3"
+jsonwebtoken = "7.2.0"
+
+actix-files = "0.5"
+
+
+[dependencies.mongodb]
+static-files = "0.2.1"
+version = "2.2.0"
+default-features = false
+features = ["async-std-runtime"] 
