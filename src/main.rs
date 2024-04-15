@@ -91,7 +91,6 @@ async fn main() -> std::io::Result<()> {
     
     
     println!("🚀 Server started successfully");
-    // let files: HashMap<&str, static_files::Resource> = HashMap::new();
 
     HttpServer::new(move || {
         App::new()

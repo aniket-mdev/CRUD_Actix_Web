@@ -14,7 +14,6 @@ use self::author_repo::AuthorRepo;
 use super::app_errors::{AppError, AppMessage};
 
 
-
 pub async fn create_author(db:Data<AuthorRepo>, author:Json<Author>) -> impl Responder {
     let new_author = Author {
         id:None,

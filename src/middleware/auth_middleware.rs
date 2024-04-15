@@ -44,8 +44,8 @@ where
 
 
     fn call(&self, req: ServiceRequest) -> Self::Future {
-
-        if req.path() != "/user/login" || !req.path().contains("/tmp") {
+        println!("req path : {}", req.path());
+        if req.path() != "/user/login"  {
             let verify = req.headers().get("Authorization");
 
             if verify.is_none() {
