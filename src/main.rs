@@ -29,7 +29,7 @@ async fn handle_multipart(mut payload: Multipart) -> impl Responder {
         let content_disposition = field.content_disposition();
         
         let file_name = content_disposition.get_filename();
-        
+        println!("TEST")
         if let Some(file_val) = file_name {
             let filepath = format!("./tmp/{}", file_val);
 
